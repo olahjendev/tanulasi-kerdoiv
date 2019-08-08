@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tanulási Stílus Kérdőív</title>
+    <link rel="stylesheet" type="text/css" href="./css/tan.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <style>
+        input[type="text"] {
+            outline: none;
+            background-color: rgb(255, 255, 255, 0.7);
+            border-radius: 8px;
+            text-align: left;
+            width: 42%;
+        }
+        select {
+            outline: none;
+            background-color: rgb(255, 255, 255, 0.7);
+            border-radius: 8px;
+            font-size: 1.6rem;
+            color: rgba(10, 48, 95, 0.65);
+            width: 16%;
+          }
+          option[value=""][disabled] {
+            color: rgba(10, 48, 95, 0.65);
+            display: none;
+          }
+          option {
+            color: black;
+          } 
+          ::placeholder {
+            color: rgba(10, 48, 95, 0.65);
+            text-align: left;
+          }
+            </style>
+
+</head>
+
+<body>
+    <img id="myHeader" class="header" src="../img/sun.png">
+    <h1 class="tantitle">Tanulási Stílus Kérdőív</h1>
+
+    <div>
+    <form>
+        <input type="text" name="név" id="nev" placeholder="Név">
+        <select name="osztály" id="osztaly" aria-placeholder="Osztály">
+            <option value="" disabled selected hidden>  Osztály  </option>
+            <option value="7.a">7.a</option>
+            <option value="7.b">7.b</option>
+            <option value="7.c">7.c</option>
+        </select>
+
+    </form>
+    </div>
+    <button type="submit" id="goButton" onclick="getnames()">Mehet</button>
+
+    <script src="./js/all.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

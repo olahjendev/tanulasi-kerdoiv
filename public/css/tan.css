@@ -1,0 +1,255 @@
+
+body {
+  background-image: url(../img/bg.png);
+  font-family: "Merriweather", serif;
+  font-size: 20pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  font-size: 18pt;
+}
+button {
+  outline: none;
+  margin-top: 20px;
+  background-color: rgb(0, 255, 115, 0.7);
+  border: 2px solid rgb(0, 199, 83, 0.7);
+  border-radius: 8px;
+  color: black;
+  font-family: "Merriweather", serif;
+  padding: 15px 32px;
+  transition: 0.2s;
+  text-align: center;
+  text-shadow: 4px, 4px, black;
+  text-decoration: rgb(255, 0, 0);
+  display: inline-block;
+  font-size: 23px;
+  box-shadow: 0 6px rgb(0, 199, 83, 0.7);
+}
+
+select {
+  font-size: 24pt;
+}
+
+button:hover {
+  outline: none;
+  margin-top: 20px;
+  background-color: rgb(0, 255, 115, 1);
+  border: 2px solid rgb(0, 199, 83, 1);
+  border-radius: 8px;
+  color: black;
+  font-family: "Merriweather", serif;
+  padding: 15px 32px;
+  transition: 0.2s;
+  text-align: center;
+  text-shadow: 4px, 4px, black;
+  text-decoration: rgb(255, 0, 0);
+  display: inline-block;
+  font-size: 23px;
+  box-shadow: 0 6px rgb(0, 199, 83, 1);
+}
+
+button:active {
+  outline: none;
+  margin-top: 20px;
+  background-color: rgb(0, 255, 115, 0.7);
+  border: 2px solid rgb(0, 199, 83, 0.7);
+  border-radius: 8px;
+  color: black;
+  font-family: "Merriweather", serif;
+  padding: 15px 32px;
+  transition: 0.1s;
+  text-align: center;
+  text-shadow: 4px, 4px, black;
+  text-decoration: rgb(255, 0, 0);
+  display: inline-block;
+  font-size: 23px;
+  box-shadow: 0 2px rgb(0, 199, 83, 1);
+  transform: translateY(4px);
+}
+
+p {
+  line-height: 3;
+  font-size: 20pt;
+  font-family: "Merriweather", serif;
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 45%;
+  margin-right: 3%;
+  border: 7px none white;
+  border-radius: 6px;
+  padding: 20px;
+  transition: 0.33s;
+  justify-content: flex-end;
+  align-content: flex-end;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.36);
+  font-weight: bold;
+  box-shadow: 0 6px rgba(10, 48, 95, 0.25);
+}
+
+div {
+  font-size: 20pt;
+  font-family: "Merriweather", serif;
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 85%;
+  margin-right: 3%;
+  border: 7px none white;
+  border-radius: 6px;
+  padding: 20px;
+  transition: 0.33s;
+  justify-content: space-between;
+  align-content: space-around;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.36);
+  font-weight: bold;
+  box-shadow: 0 6px rgba(10, 48, 95, 0.25);
+}
+
+.transbutton:active {
+  font-size: 20pt;
+  font-family: "Merriweather", serif;
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 85%;
+  margin-right: 3%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  padding: 20px;
+  justify-content: space-between;
+  align-content: space-around;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
+  box-shadow: 0 2px rgba(10, 48, 95, 0.25);
+  transform: translateY(4px);
+}
+
+form {
+  padding: 4em;
+}
+
+.radio0 {
+  content: url(../img/r1.svg);
+}
+.radio0:checked {
+  content: url(../img/r1c.svg);
+}
+
+.radio1 {
+  content: url(../img/r2.svg);
+}
+.radio1:checked {
+  content: url(../img/r2c.svg);
+}
+.radio2 {
+  content: url(../img/r3.svg);
+}
+.radio2:checked {
+  content: url(../img/r3c.svg);
+}
+.radio3 {
+  content: url(../img/r4.svg);
+}
+.radio3:checked {
+  content: url(../img/r4c.svg);
+}
+.radio4 {
+  content: url(../img/r5.svg);
+}
+.radio4:checked {
+  content: url(../img/r5c.svg);
+}
+
+.radio0,
+.radio1,
+.radio2,
+.radio3,
+.radio4 {
+  width: 2em;
+  height: 2em;
+  margin: 1em 2em 0 2em;
+  outline: none;
+}
+
+#Aud,
+.Aud {
+  color: red;
+}
+
+#Viz,
+.Viz {
+  color: orange;
+}
+
+#Moz,
+.Moz {
+  color: yellow;
+}
+
+#Tar,
+.Tar {
+  color: green;
+}
+
+#Cse,
+.Cse {
+  color: blue;
+}
+
+#Imp,
+.Imp {
+  color: indigo;
+}
+
+#Mec,
+.Mec {
+  color: purple;
+}
+
+.results {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(98, 191, 194, 0.582);
+}
+
+.header {
+  position: fixed;
+  size: 50%;
+  top: 0;
+  left: 0;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  size: 50%;
+  top: 0;
+  left: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+  size: 50%;
+}
+
+.done {
+  font-size: 20pt;
+  font-family: "Merriweather", serif;
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 85%;
+  margin-right: 3%;
+  border: 1px none rgba(255, 255, 255, 0.81);
+  border-radius: 6px;
+  padding: 20px;
+  justify-content: space-between;
+  align-content: space-around;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.81);
+  font-weight: bold;
+}
